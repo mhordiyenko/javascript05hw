@@ -2,7 +2,7 @@ let A = parseFloat(prompt('Введіть коефіцієнт А'));
 let B = parseFloat(prompt('Введіть коефіцієнт B'));
 let C = parseFloat(prompt('Введіть коефіцієнт C'));
 
-function Descryminant(A, B, C) {
+function Discriminator(A, B, C) {
     let D = Math.pow(B,2)-4*A*C;
     if(D>0){
         let x1 = (-B-Math.sqrt(D))/2*A;
@@ -15,4 +15,4 @@ function Descryminant(A, B, C) {
         return alert("Квадратне рівняння немає розв'язків");
     }
 }
- let result = Descryminant(A, B, C);
+ let result = Discriminator(A, B, C);
